@@ -20,7 +20,7 @@
                 <img src="./assets/images/icon-dropdown.svg" alt="" aria-hidden="true">
             </button>
 
-            <div class="unitsMenu">
+            <div class="unitsMenu" hidden>
                 <button class="unitSwitch" type="button">Switch to Imperial</button>
 
                 <div class="unitGroup">
@@ -64,5 +64,19 @@
             </div>
         </div>
     </header>
+
+    <main>
+
+        <!-- API error state -->
+        <section class="errorState" >
+            <img src="./assets/images/icon-error.svg" alt="" aria-hidden="true">
+            <h1>Something went wrong</h1>
+            <p id="errorMessage">We couldn't connect to the server (API error). Please try again in a few moments.</p>
+            <button class="retryBtn" type="button">
+                <img src="./assets/images/icon-retry.svg" alt="" aria-hidden="true">
+                <span>Retry</span>
+            </button>
+        </section>
+    </main>
 </body>
 </html>
