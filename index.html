@@ -130,7 +130,7 @@
                     </div>
                 </section>
 
-                <div class="weatherDetails">
+                <section class="weatherDetails">
                     <div class="detailBox">
                         <p class="weatherHeading">Feels Like</p>
                         <p class="weatherValue" id="feelsLike">—</p>
@@ -147,9 +147,32 @@
                         <p class="weatherHeading">Precipitation</p>
                         <p class="weatherValue" id="precipitation">—</p>
                     </div>
-                </div>
+                </section>
+
+                <section class="dailyForecast">
+                    <h3>Daily forecast</h3>
+                    <div class="dailyBox"></div>
+                </section>
             </div>
+
+            <section class="hourlyForecast">
+                <div class="hourlyHeading">
+                    <h3>Hourly forecast</h3>
+
+                    <div class="dayPicker">
+                        <button class="dayBtn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="dayList">
+                            <span id="dayLabel">—</span>
+                            <img src="./assets/images/icon-dropdown.svg" alt="" aria-hidden="true">
+                        </button>
+                        <ul class="dayList" role="listbox" hidden></ul>
+                    </div>
+                </div>
+
+                <div class="hourlyBox"></div>
+            </section>
         </section>
     </main>
+
+    <div class="srOnly" id="status" role="status" aria-live="polite"></div>
 </body>
 </html>
