@@ -68,7 +68,7 @@
     <main>
 
         <!-- API error state -->
-        <section class="errorState" >
+        <section class="errorState" hidden>
             <img src="./assets/images/icon-error.svg" alt="" aria-hidden="true">
             <h1>Something went wrong</h1>
             <p id="errorMessage">We couldn't connect to the server (API error). Please try again in a few moments.</p>
@@ -77,6 +77,33 @@
                 <span>Retry</span>
             </button>
         </section>
+
+        <!-- Hero Section -->
+        <div class="searchArea">
+            <section class="heroContent">
+                <h1>How's the sky looking today?</h1>
+            </section>
+
+            <form class="search" role="search" autocomplete="off">
+                <div class="search-field">
+                    <label for="locationSearch" class="searchBox">
+                        <span>
+                            <img src="./assets/images/icon-search.svg" alt="" aria-hidden="true">
+                        </span>
+                        <input type="text" id="locationSearch" name="location"
+                            placeholder="Search for a place..."
+                            autocomplete="off"
+                            role="combobox" aria-expanded="false"
+                            aria-controls="suggestions"
+                            aria-autocomplete="list">
+                    </label>
+                    <ul class="suggestions" id="suggestions" role="listbox" hidden></ul>
+                </div>
+                <button type="submit" class="submitBtn">Search</button>
+            </form>
+
+            <p class="noResult">No search result found!</p>
+        </div>
     </main>
 </body>
 </html>
